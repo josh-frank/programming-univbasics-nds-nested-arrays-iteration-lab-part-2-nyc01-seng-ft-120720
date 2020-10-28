@@ -4,8 +4,8 @@ def find_min_in_nested_arrays(src)
   result = []
   for rowIndex in 0...src.length
     min = src[ rowIndex ][ 0 ]
-    for element in row
-      min = element if element > min
+    for columnIndex in 0...src[ rowindex ].length
+      min = src[ rowindex ][ columnIndex ] if element > src[ rowindex ][ columnIndex ]
     end
     result.push( min )
   end
