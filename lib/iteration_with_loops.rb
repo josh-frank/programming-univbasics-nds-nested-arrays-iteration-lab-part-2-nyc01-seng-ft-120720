@@ -5,7 +5,7 @@ def find_min_in_nested_arrays(src)
   for rowIndex in 0...src.length
     min = src[ rowIndex ][ 0 ]
     for columnIndex in 0...src[ rowindex ].length
-      min = src[ rowindex ][ columnIndex ] if element > src[ rowindex ][ columnIndex ]
+      min = src[ rowindex ][ columnIndex ] if element < src[ rowindex ][ columnIndex ]
     end
     result.push( min )
   end
